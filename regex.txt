@@ -1,0 +1,9 @@
+https://www.geeksforgeeks.org/pattern-matching-python-regex/
+
+
+# Python program to illustrate
+# Matching regex objects
+import re
+phoneNumRegex = re.compile(r'\d\d\d-\d\d\d-\d\d\d\d')
+mo = phoneNumRegex.search('My number is 415-555-4242.')
+print('Phone number found: ' + mo.group())
